@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.TambahMahasiswaActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Tambah Mahasiswa Baru"
+            app:titleCentered="true" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/back_white_round"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NIM"/>
+
+                <EditText
+                    android:id="@+id/nimMhs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="NIM Mahasiswa"
+                    android:inputType="number"
+                    android:background="@drawable/back_spinner"
+                    android:padding="16dp"
+                    android:maxLength="10"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Lengkap"
+                    android:layout_marginTop="24dp"/>
+
+                <EditText
+                    android:id="@+id/namaMhs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Mahasiswa"
+                    android:inputType="textCapSentences"
+                    android:background="@drawable/back_spinner"
+                    android:padding="16dp"
+                    android:maxLength="50"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:layout_marginTop="24dp"/>
+
+                <EditText
+                    android:id="@+id/emailMhs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email Mahasiswa"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/back_spinner"
+                    android:padding="16dp"
+                    android:maxLength="50"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Telepon"
+                    android:layout_marginTop="24dp"/>
+
+                <EditText
+                    android:id="@+id/teleponMhs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Telepon Mahasiswa"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/back_spinner"
+                    android:padding="16dp"
+                    android:maxLength="13"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat"
+                    android:layout_marginTop="24dp"/>
+
+                <EditText
+                    android:id="@+id/alamatMhs"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:hint="Alamat Mahasiswa"
+                    android:gravity="top|start"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:background="@drawable/back_spinner"
+                    android:padding="16dp"
+                    android:maxLength="150"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/simpanMhs"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:text="Simpan Mahasiswa"
+                android:layout_marginTop="42dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="200dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

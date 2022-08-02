@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sia_app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".admin.PertemuanMk"
+            android:exported="false" />
+        <activity
+            android:name=".admin.TagihanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dosen.EditAccountDosenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dosen.AccountDosenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mhs.EditAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mhs.AccountMhsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dosen.BeritaAcaraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dosen.DaftarMhsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dosen.MkDosenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mhs.TagihanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mhs.MkMhsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mhs.InputKrsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dosen.PenilaianActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dosen.MengajarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.DetailMkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.DetailMhsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.DetailDosenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mhs.HomeMhsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dosen.HomeDosenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.PersensiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.TambahJadwalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.JadwalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.TambahMataKuliahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.MataKuliahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.TambahMahasiswaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.MahasiswaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.HomeAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.DosenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.TambahDosenActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

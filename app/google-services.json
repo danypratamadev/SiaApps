@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "259529430613",
+    "project_id": "sia-apps-22a89",
+    "storage_bucket": "sia-apps-22a89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259529430613:android:b697546562a2f54e4f66dc",
+        "android_client_info": {
+          "package_name": "com.example.sia_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259529430613-ircah4v4a27sr1oq6j0h26ancf5jc5mp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5RWydOTSZvBMuLF9Yg6O6CXDD7jahJ60"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "259529430613-ircah4v4a27sr1oq6j0h26ancf5jc5mp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

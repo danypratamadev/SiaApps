@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.TambahMataKuliahActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Tambah Mata Kuliah Baru"
+            app:titleCentered="true" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/back_white_round"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kode Mata Kuliah"/>
+
+                <EditText
+                    android:id="@+id/kodeMk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Kode Mata Kuliah"
+                    android:inputType="textCapSentences"
+                    android:background="@drawable/back_spinner"
+                    android:padding="16dp"
+                    android:maxLength="10"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Mata Kuliah"
+                    android:layout_marginTop="24dp"/>
+
+                <EditText
+                    android:id="@+id/namaMk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Mata Kuliah"
+                    android:inputType="textCapSentences"
+                    android:background="@drawable/back_spinner"
+                    android:padding="16dp"
+                    android:maxLength="50"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SKS Mata Kuliah"
+                    android:layout_marginTop="24dp"/>
+
+                <EditText
+                    android:id="@+id/sksMk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="SKS Mata Kuliah"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/back_spinner"
+                    android:padding="16dp"
+                    android:maxLength="1"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jenis Mata Kuliah"
+                    android:layout_marginTop="24dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back_spinner"
+                    android:layout_marginTop="8dp">
+
+                    <Spinner
+                        android:id="@+id/spinJenis"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:spinnerMode="dropdown"
+                        android:backgroundTint="@color/purple_500"
+                        android:overlapAnchor="false"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/simpanMk"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:text="Simpan Mata Kuliah"
+                android:layout_marginTop="42dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="200dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

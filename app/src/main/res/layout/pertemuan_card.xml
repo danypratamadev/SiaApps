@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardPertemuan"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back_card"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:elevation="5dp"
+    android:weightSum="10">
+
+    <TextView
+        android:id="@+id/pertemuanMk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pertemuan"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/isiBeritaAcara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Isi berita acara"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/black"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/mhsHadirInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="5dp"
+        android:weightSum="10"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:layout_marginEnd="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kehadiran"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/mhsHadir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 Mahasiswa"
+                android:textSize="18sp"
+                android:textColor="@color/purple_700"
+                android:textStyle="bold"
+                android:layout_marginTop="3dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/lihatMhs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lihat"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/presensiInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:weightSum="10"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:layout_marginEnd="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kode Presensi"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/kodePresensi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="873746"
+                android:textSize="18sp"
+                android:textColor="@color/purple_700"
+                android:textStyle="bold"
+                android:layout_marginTop="3dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:layout_marginStart="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Berlaku Sampai"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/masaBerlaku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21.30 WIB"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="3dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tombolLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:weightSum="10">
+
+        <Button
+            android:id="@+id/buatPresensi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Buat Presensi"
+            android:backgroundTint="#009688"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/buatBerita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Berita Acara"
+            android:backgroundTint="#2196F3"
+            android:layout_marginStart="4dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

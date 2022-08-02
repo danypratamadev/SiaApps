@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mhs.EditAccountActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Edit Profil Akun"
+            app:titleCentered="true" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/back_white_round"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NIM"/>
+
+                <EditText
+                    android:id="@+id/nimMhs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nomor Induk Mahasiswa"
+                    android:inputType="number"
+                    android:enabled="false"
+                    android:background="@drawable/back_spinner"
+                    android:padding="16dp"
+                    android:maxLength="10"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Lengkap"
+                    android:layout_marginTop="24dp"/>
+
+                <EditText
+                    android:id="@+id/namaMhs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Lengkap"
+                    android:inputType="textCapSentences"
+                    android:background="@drawable/back_spinner"
+                    android:padding="16dp"
+                    android:maxLength="50"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:layout_marginTop="24dp"/>
+
+                <EditText
+                    android:id="@+id/emailMhs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:enabled="false"
+                    android:background="@drawable/back_spinner"
+                    android:padding="16dp"
+                    android:maxLength="50"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Telepon"
+                    android:layout_marginTop="24dp"/>
+
+                <EditText
+                    android:id="@+id/teleponMhs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nomor Telepon"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/back_spinner"
+                    android:padding="16dp"
+                    android:maxLength="13"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat"
+                    android:layout_marginTop="24dp"/>
+
+                <EditText
+                    android:id="@+id/alamatMhs"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:hint="Alamat"
+                    android:gravity="top|start"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:background="@drawable/back_spinner"
+                    android:padding="16dp"
+                    android:maxLength="150"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/back_white_round"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NIK"/>
+
+                <EditText
+                    android:id="@+id/nikMhs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nomor Induk Kependudukan"
+                    android:inputType="number"
+                    android:background="@drawable/back_spinner"
+                    android:padding="16dp"
+                    android:maxLength="16"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tempat Lahir"
+                    android:layout_marginTop="24dp"/>
+
+                <EditText
+                    android:id="@+id/tmpLahirMhs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tempat Lahir"
+                    android:inputType="textCapSentences"
+                    android:background="@drawable/back_spinner"
+                    android:padding="16dp"
+                    android:maxLength="50"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal Lahir"
+                    android:layout_marginTop="24dp"/>
+
+                <LinearLayout
+                    android:id="@+id/tglLahirLinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back_spinner"
+                    android:padding="16dp"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/tglLahirMhs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DD/MM/YYYY"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/darker_gray"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Golongan Darah"
+                    android:layout_marginTop="24dp"/>
+
+                <EditText
+                    android:id="@+id/darahMhs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="A/B/AB/O"
+                    android:inputType="textCapSentences"
+                    android:background="@drawable/back_spinner"
+                    android:padding="16dp"
+                    android:maxLength="2"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Asal Sekolah"
+                    android:layout_marginTop="24dp"/>
+
+                <EditText
+                    android:id="@+id/sekolahMhs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Asal Sekolah"
+                    android:inputType="textCapSentences"
+                    android:background="@drawable/back_spinner"
+                    android:padding="16dp"
+                    android:maxLength="50"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/back_white_round"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NIK Ayah"/>
+
+                <EditText
+                    android:id="@+id/nikAyah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nomor Induk Kependudukan"
+                    android:inputType="number"
+                    android:background="@drawable/back_spinner"
+                    android:padding="16dp"
+                    android:maxLength="16"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Ayah"
+                    android:layout_marginTop="24dp"/>
+
+                <EditText
+                    android:id="@+id/namaAyah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Lengkap Ayah"
+                    android:inputType="textCapSentences"
+                    android:background="@drawable/back_spinner"
+                    android:padding="16dp"
+                    android:maxLength="50"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pekerjaan Ayah"
+                    android:layout_marginTop="24dp"/>
+
+                <EditText
+                    android:id="@+id/pekerjaanAyah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Pekerjaan Ayah"
+                    android:inputType="text"
+                    android:background="@drawable/back_spinner"
+                    android:padding="16dp"
+                    android:maxLength="50"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat Ayah"
+                    android:layout_marginTop="24dp"/>
+
+                <EditText
+                    android:id="@+id/alamatAyah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Alamat"
+                    android:inputType="textCapSentences"
+                    android:background="@drawable/back_spinner"
+                    android:padding="16dp"
+                    android:maxLength="50"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/back_white_round"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NIK Ibu"/>
+
+                <EditText
+                    android:id="@+id/nikIbu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nomor Induk Kependudukan"
+                    android:inputType="number"
+                    android:background="@drawable/back_spinner"
+                    android:padding="16dp"
+                    android:maxLength="16"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Ibu"
+                    android:layout_marginTop="24dp"/>
+
+                <EditText
+                    android:id="@+id/namaIbu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Lengkap Ibu"
+                    android:inputType="textCapSentences"
+                    android:background="@drawable/back_spinner"
+                    android:padding="16dp"
+                    android:maxLength="50"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pekerjaan Ibu"
+                    android:layout_marginTop="24dp"/>
+
+                <EditText
+                    android:id="@+id/pekerjaanIbu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Pekerjaan Ibu"
+                    android:inputType="text"
+                    android:background="@drawable/back_spinner"
+                    android:padding="16dp"
+                    android:maxLength="50"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat Ibu"
+                    android:layout_marginTop="24dp"/>
+
+                <EditText
+                    android:id="@+id/alamatIbu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Alamat"
+                    android:inputType="textCapSentences"
+                    android:background="@drawable/back_spinner"
+                    android:padding="16dp"
+                    android:maxLength="50"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/simpanProfil"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:text="Simpan Profil"
+                android:layout_marginTop="42dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="200dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

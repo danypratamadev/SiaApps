@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_bottom_sheet"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="4dp"
+        android:background="@drawable/back_white_round"
+        android:backgroundTint="@android:color/darker_gray"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/namaMhs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Mhsnya"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Silkan masukkan nilai Tugas Harian yang diperoleh oleh Mahasiswa: Mulai dari 0 - 100 "
+                android:textColor="@color/black"
+                android:lineSpacingExtra="5dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="200dp"
+                android:weightSum="10">
+
+                <EditText
+                    android:id="@+id/inputTugas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:hint="Nilai UTS"
+                    android:inputType="numberDecimal"
+                    android:maxLength="3"
+                    android:background="@drawable/back_spinner"
+                    android:padding="16dp"/>
+
+                <Button
+                    android:id="@+id/simpanTugas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Simpan"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/purple_500"
+                    android:layout_marginStart="16dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
